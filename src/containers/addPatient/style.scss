@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.from-align-center {
+    margin-top: 80px;
+}
+
+.title {
+    margin-top: 100px;
+}
+
+.lable {
+    margin-left: -580px;
+}
+
+.error-msg {
+    font-size: 12px;
+    color: red;
+    display: flex;
+}
