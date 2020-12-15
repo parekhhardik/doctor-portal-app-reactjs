@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import { Table, Form } from 'react-bootstrap';
 import { connect } from 'react-redux';
 
-import './style.scss'
+import './style.scss';
+import Navbar from '../../components/Navbar/Navbar';
 import { getPatientAction, deletePatientAction } from './action/action';
 
 class Patient extends Component {
@@ -17,10 +18,13 @@ class Patient extends Component {
 
     componentDidMount = () => {
         this.props.getPatientAction();
-        this.setState({
-            ...this.state,
-            items: this.props.patients
-        });
+        if (this.props.patients && this.props.patients.length) {
+            this.setState({
+                ...this.state,
+                items: [...this.props.patients]
+            });
+            this.state.items = [...this.props.patients];
+        }
     }
 
     handlePrevPageClick = e => {
@@ -77,7 +81,9 @@ class Patient extends Component {
 
     render() {
         return (
-            <div className="container m-5">
+            <>
+            <Navbar />
+                <div className="container m-5">
                     {/* Search */}
                     <Form>
                         <Form.Group controlId="searchTerm">
@@ -126,6 +132,7 @@ class Patient extends Component {
                         </tbody>
                     </Table>
                 </div>
+            </>
         );
     }
 };

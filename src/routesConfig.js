@@ -10,7 +10,7 @@ import PatientDetails from './containers/patientDetails/PatientDetails';
 import AddPatient from './containers/addPatient/AddPatient';
 // import GuardedRoute from './GuardedRoute';
 
-const RoutesConfig = (props) => {
+const RoutesConfig = ({location}) => {
   // const [auth, setIsAuth] = useState(false);
 
   // if (props.isSignInUser && localStorage.getItem('token')) {

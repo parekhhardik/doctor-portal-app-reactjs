@@ -1,24 +1,6 @@
 {
   "patient-list": [
     {
-      "id": "1",
-      "name": "patient",
-      "mobile": "1231231231",
-      "email": "patient@test.com"
-    },
-    {
-      "id": "5",
-      "name": "amit kumar",
-      "mobile": "7033215711",
-      "email": "amit@gmail.com"
-    },
-    {
-      "id": "6",
-      "name": "Pallavi S",
-      "mobile": "1234567890",
-      "email": "Pa@gmail.com"
-    },
-    {
       "id": "7",
       "name": "Abbes Nahedh",
       "mobile": "20019207",
@@ -96,6 +78,13 @@
       "mobile": "9408185145",
       "submitted": false,
       "id": "Z7aB28z"
+    },
+    {
+      "name": "Hardik Parekh",
+      "email": "patelvaibhav27@gmail.com",
+      "mobile": "45646546546",
+      "submitted": false,
+      "id": "u_nDt5b"
     }
   ]
 }
